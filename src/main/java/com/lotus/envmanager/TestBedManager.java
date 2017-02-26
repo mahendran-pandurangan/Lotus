@@ -2,17 +2,17 @@ package com.lotus.envmanager;
 
 public class TestBedManager {
 
-	public static String env = "";
-	public static Object browserType = "";
+	public static String env = "qa";
+	public static Object browserType = "firefox";
 
 
 	public String getEnv() {
-		String env = System.getProperty("env");
+		//String env = System.getProperty("env");
 	    return env;  
 	}
 	
-	public String getBrowserType(){
-		String browserType = System.getProperty("browserType");
+	public Object getBrowserType(){
+
 		return browserType;
 	}
 

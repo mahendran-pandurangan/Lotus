@@ -12,7 +12,7 @@ public class LinearMortCalcTest {
 	@Test
 	public void testLinearMortgageCalc() throws Exception{
 		Lotus lotus = new Lotus(driver);
-		driver = lotus.common.getWebDriver(lotus.testBedManager.getBrowserType());
+		driver = lotus.common.getWebDriver("firefox");
 		lotus.common.getBaseUrl(driver, "http://www.mortgagecalculator.org/");
 		lotus.mortgageCalcPage.homePage(driver, "xpath=.//input[@name='param[homevalue]']", "xpath=.//input[@name='param[pmi]']", "xpath=.//input[@name='cal']");
 		String getResult = lotus.mortgageCalcPageSummary.getAmount(driver, "xpath=.(//h3)[2]");
