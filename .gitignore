@@ -1,0 +1,20 @@
+# eclipse
+.project
+.classpath
+.settings
+
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+
+# binary
+target
+dist
+bin
+test-output
+
+# misc
+*.log
+.DS_Store
