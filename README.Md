@@ -27,4 +27,10 @@ SpringMortCalcTest.java ----> mvn clean install -P regression -DrunOnEnv=firefox
 mvn clean site
 ```
 
+## To see reports in sonar - verify in http://localhost:9000/
+
+```bash
+mvn clean verify sonar:sonar -Denv=qa -DbrowserType=firefox
+```
+
 
