@@ -21,4 +21,10 @@ LinearMortCalcTest.java ----> Right click run as TestNG test
 SpringMortCalcTest.java ----> mvn clean install -P regression -DrunOnEnv=firefox
 ```
 
+## To generate javadoc, stylecheck, findbugs report
+
+```bash
+mvn clean site
+```
+
 
